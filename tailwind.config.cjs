@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         nunito: "Nunito",
+        source: "Source Code Pro",
       },
     },
   },
