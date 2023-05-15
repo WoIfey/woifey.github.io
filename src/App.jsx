@@ -2,20 +2,20 @@ const App = () => {
   return (
     <div className="h-screen flex flex-wrap font-nunito text-white select-none overflow-x-hidden bg-[#1b1b1b]">
       <div className="bg-gradient-to-r from-orange-500 via-orange-500 to-yellow-500 h-full w-full md:w-[50%] flex flex-col justify-center md:justify-evenly items-center">
-        <a href="#">
-          <h1 className="text-[70px] lg:text-[110px] md:text-[80px] px-16 md:p-5 drop-shadow-xl text-orange-100">
+        <a href="https://github.com/WoIfey" target="_blank">
+          <h1 className="text-[70px] lg:text-[110px] md:text-[80px] px-16 md:p-5 drop-shadow-xl text-orange-100 transition-all duration-300 ease-in-out transform hover:scale-110">
             WOLFEY
           </h1>
         </a>
         <div className="w-full flex justify-center">
           <a
-            href="https://github.com/WoIfey"
+            href="https://github.com/WoIfey/woifey.github.io"
             target="_blank"
             className="transition-all duration-300 ease-in-out transform hover:scale-110 drop-shadow-xl"
           >
-            <h1 className="text-[70px] lg:text-[110px] md:text-[80px] px-16 md:p-5 mb-4">
+            <p className="text-[70px] lg:text-[110px] md:text-[80px] px-16 md:p-5 mb-4">
               GITHUB
-            </h1>
+            </p>
           </a>
         </div>
         <div className="md:hidden block">
@@ -23,7 +23,7 @@ const App = () => {
             <img
               src="arrow-down.svg"
               alt="Down"
-              className="bg-orange-200 rounded-full p-2"
+              className="bg-orange-200 rounded-full p-2 w-12 h-12"
             />
           </a>
         </div>
