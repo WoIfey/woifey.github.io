@@ -1,4 +1,7 @@
 const App = () => {
+  function smooth() {
+    document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <div className="h-screen flex flex-wrap font-nunito text-white select-none overflow-x-hidden bg-[#1b1b1b]">
       <div className="bg-gradient-to-r from-orange-500 via-orange-500 to-yellow-500 h-full w-full md:w-[50%] flex flex-col justify-center md:justify-evenly items-center">
@@ -19,13 +22,13 @@ const App = () => {
           </a>
         </div>
         <div className="md:hidden block">
-          <a href="#projects" className="m-2">
+          <button href="#projects" className="m-2" onClick={smooth}>
             <img
               src="arrow-down.svg"
               alt="Down"
               className="bg-orange-200 rounded-full p-2 w-12 h-12"
             />
-          </a>
+          </button>
         </div>
       </div>
 
@@ -40,7 +43,9 @@ const App = () => {
         <div className="flex items-center flex-col mt-1 font-source">
           <div className="flex w-[90%] mb-16">
             <div className="h-[200px] w-[70%] mr-10 mt-5 transition-all duration-300 ease-in-out transform hover:scale-105">
-              <p className="text-xl md:text-[25px] mb-1.5 text-center">SHORTENER</p>
+              <p className="text-xl md:text-[25px] mb-1.5 text-center">
+                SHORTENER
+              </p>
               <a href="https://woifey.github.io/Shortener/" target="_blank">
                 <img
                   src="1.webp"
@@ -72,7 +77,9 @@ const App = () => {
 
           <div className="flex w-[90%]">
             <div className="h-[200px] w-[70%] mr-10 mt-5 transition-all duration-300 ease-in-out transform hover:scale-105">
-              <p className="text-xl md:text-[25px] mb-1.5 text-center">TRULLU</p>
+              <p className="text-xl md:text-[25px] mb-1.5 text-center">
+                TRULLU
+              </p>
               <a href="https://woifey.github.io/Trullu/" target="_blank">
                 <img
                   src="2.webp"
